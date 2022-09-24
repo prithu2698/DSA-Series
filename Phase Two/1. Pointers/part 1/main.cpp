@@ -53,6 +53,7 @@ int main()
 
 */
 
+    /*
 
     int firstValue = 5, secondValue = 15;
     char thirdValue = 'a';
@@ -68,7 +69,7 @@ int main()
     *p1 = 20; // value pointed to by p1 = 20 
     *p3 = 'b'; // value pointed to by p3 = ‘b ’
     cout << "firstvalue is " << firstValue << endl; cout << "secondvalue is " << secondValue << endl; cout << "thirdvalue is " << thirdValue << endl; 
-
+*/
 
     
     return 0;
