@@ -5,6 +5,7 @@
 using namespace std;
 int main()
 {
+    
     /*
     int num = 5;
     cout<<num<<endl;
@@ -39,6 +40,7 @@ int main()
     cout<<p<<endl;
 */
 
+    /*
     int num = 5;
     int *p = 0;
     p = &num;
@@ -49,7 +51,25 @@ int main()
     cout<<"num: "<<num<<endl;
     cout<<"a: "<<*a<<endl; 
 
+*/
 
 
+    int firstValue = 5, secondValue = 15;
+    char thirdValue = 'a';
+    int *p1 , *p2;
+    char *p3;
+    p1 = &firstValue;
+    p2 = &secondValue;
+    p3 = &thirdValue;
+
+    *p1 = 10; //value pointed to by p1 = 10
+    *p2 = *p1; // value pointed to by p2 = value pointed to by p1
+    p1 = p2; // p1 = p2 (value of pointer is copied)
+    *p1 = 20; // value pointed to by p1 = 20 
+    *p3 = 'b'; // value pointed to by p3 = ‘b ’
+    cout << "firstvalue is " << firstValue << endl; cout << "secondvalue is " << secondValue << endl; cout << "thirdvalue is " << thirdValue << endl; 
+
+
+    
     return 0;
 }
