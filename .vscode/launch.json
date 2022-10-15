@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/C++/DSA-Series/Phase Two/Pointers",
-      "program": "e:/C++/DSA-Series/Phase Two/Pointers/build/Debug/outDebug",
+      "cwd": "e:/C++/DSA-Series/Phase Two/3. Recursions",
+      "program": "e:/C++/DSA-Series/Phase Two/3. Recursions/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

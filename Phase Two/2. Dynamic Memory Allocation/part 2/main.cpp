@@ -13,19 +13,19 @@ using namespace std;
 //     takeInput(array, row, col);
 //     showOutput(array, row, col);
 // }
-void createJagged2Darray(int **arr, int& row, int& col){
+void createJagged2Darray(int **arr, int& row, int col){
     for(int i = 0; i < row; i++){
         cout<<"enter jagged col"<<i+1<<endl;
         cin>>col;
         int *arr = new int[col];
     }
 }
-void create2DArray(int **arr, int& row, int& col){
+void create2DArray(int **arr, int row, int col){
     for(int i = 0; i < row; i++){
         arr[i] = new int[col];
     }
 }
-void takeInput(int **arr, int row, int& col){
+void takeInput(int **arr, int row, int col){
     for(int i = 0; i < row; i++){
         cout<<"please enter for row "<<arr[i]<<endl;
         for(int j = 0; j < col; j++){
@@ -33,7 +33,7 @@ void takeInput(int **arr, int row, int& col){
         }
     }
 }
-void showOutput(int **arr, int row, int& col){
+void showOutput(int **arr, int row, int col){
     for(int i = 0; i < row; i++){
         for(int j = 0; j < col; j++){
             cout<< arr[i][j]<<" ";
@@ -42,8 +42,7 @@ void showOutput(int **arr, int row, int& col){
     }
 }
 
-/// @brief 
-/// @return 
+
 int main()
 {
 /*
@@ -78,7 +77,14 @@ int main()
         for(int j = 0; j < col; j++){
             cin>> arr[j];
         }
+        for(int j = 0; j < col; j++){
+            cout<< arr[j]<<" ";
+        }
+        cout<<endl;
     }
+
+
+
     //taking input
     // for(int i = 0; i < row; i++){
     //     cout<<"please enter for row "<<arr[i]<<endl;
@@ -89,7 +95,7 @@ int main()
     
     //showing output
     for(int i = 0; i < row; i++){
-        for(int j = 0; j < col; j++){
+        for(int j = 0; j < arr[i][col]; j++){
             cout<< arr[i][j]<<" ";
         }
         cout<<endl;
